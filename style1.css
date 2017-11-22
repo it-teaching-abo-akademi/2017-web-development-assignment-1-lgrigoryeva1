@@ -1,0 +1,115 @@
+ /* the following textboxes all have individual margin values in order to follow the initial layout for this exercise*/
+ /*all the textboxes have the same width/height*/
+ /*i used the display: inline-block in order to keep all the elements in the same line*/
+ /*there's probably a better way of doing this*/
+ 
+
+#textA 
+{
+	color: white;
+	height:200px;
+	width: 200px;
+	border: 1px solid white;
+	background-color: blue;
+	float: left;
+	margin-top: 0px;
+	margin-left: 0px;
+	display: inline-block;
+	text-align: center;
+}
+
+#textB
+{
+	
+	border: 1px solid black;
+	font-weight: bold;
+	width: 200px;
+	margin-top: 0px;
+	display: inline-block;
+	background-color: yellow;
+	text-align: left;
+	float: left;
+	padding-top: 80px;
+	padding-bottom: 80px;
+	margin-left: 250px;
+	
+	
+}
+
+#textC
+
+{
+	border: 1px solid black;
+	margin-top: 0px;
+	display: inline-block;
+	background-color: green;
+	color: white;
+	width: 200px;
+	padding-top: 180px;
+	padding-bottom: 0px;
+	text-align: center;
+	float: left;
+	margin-left: 150px;
+	display: inline-block;
+	
+}
+
+
+#textD
+
+{
+	
+	display: inline-block;
+	background-color: gray;
+	border: 3px solid red;
+	color: red;
+	margin-top: 5px;
+	margin-left: 200px;
+	margin-right: 420px;
+	width: 650px;
+	height: 190px;
+	float: right;
+	
+}
+
+@keyframes animatedBackground {
+	from { background-position: 0 0; }
+	to { background-position: 100% 0; }
+}
+
+#textZ
+
+{
+	width: 200px;
+	height: 200px;
+	background-image: url("doge.jpg");
+	display: inline-block;
+	float: left;
+	margin-top: 0px;
+	margin-left: 240px;
+	animation: animatedBackground 10s linear infinite;
+	background-repeat: repeat-x;
+	
+}
+
+
+img
+{
+	display: inline-block;
+	margin-left: -200px;
+	margin-top: 0px;
+	float: left;
+	
+}
+
+#div1
+{
+	width: 250px;
+	height: 250px;
+	border: 1px solid black;
+	display: inline-block;
+	margin-top: 300px;
+}
+
+
+

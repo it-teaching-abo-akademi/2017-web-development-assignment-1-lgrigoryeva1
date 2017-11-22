@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<body>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="style1.css">
+
+<!-- my HTML code is very basic, since we only needed a few texts and JS functions for the drag and drop -->
+<!-- this exercise isn't completed because I struggled with positioning the drag and drop box properly according 
+to the layout since I think all the previous textboxes and their individually set margins  -->
+
+<script>
+
+function allowDrop(ev) {
+    ev.preventDefault();
+}
+
+function drag(ev) {
+    ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+    ev.preventDefault();
+    var data = ev.dataTransfer.getData("text");
+    ev.target.appendChild(document.getElementById(data));
+}
+</script>
+<p id="textA">Dogs are the cutest pets in the world!</p>
+<p id="textB">Looking at dogs makes me so happy!</p> 
+<p id="textC">This is my dog Seamus</p> 
+<p id="textZ"></p>
+<p id="textD"> Seamus likes it when I pet his belly or scratch behind his ears </p>
+
+<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div> -->
+<img src="doggo.jpeg" alt="doggo" width="200" height="200" draggable="true">
+
+</body>
+</html>
